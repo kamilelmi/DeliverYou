@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Support_Chat">
+
+
+        <TextView
+            android:id="@+id/end_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="End Chat"
+            android:textColor="@color/blue_default"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="@color/gray"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:backgroundTint="#D5F3F0"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="15dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvImg"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="#D5F3F0"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="30dp">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/customer_support"
+                            app:tint="@color/blue_default" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMessages"
+                        android:layout_below="@id/cvImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="10dp"
+                        android:layout_above="@id/llSend"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/llSend"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="55dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/gray"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="15dp">
+
+
+                            <EditText
+                                android:id="@+id/etSupport"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/new_btn_bg"
+                                android:ems="10"
+                                android:hint="Enter your Message"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="20dp" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <ImageButton
+                            android:id="@+id/support_send_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="-50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sent"
+                            app:tint="@color/blue_default" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

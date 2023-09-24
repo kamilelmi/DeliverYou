@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Waiting_driver">
+
+
+
+    <ImageView
+        android:id="@+id/waiting_icon"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/waitinf_driver_icon"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/waiting_go_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:hint="Continue"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Carpool Confimed, We will notify you when a driver picks up request"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/waiting_icon"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple @ 02/27/2023 12:13 PM"
+            android:layout_gravity="center"
+
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/outgoing_layout_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="start"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/bubble_out"
+            android:backgroundTint="#dedede">
+
+            <ImageView
+                android:id="@+id/ivMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_below="@id/ivMedia"
+                android:id="@+id/tvMessage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:autoLink="web"
+                android:text="gff hds sdhfds fsdfjsdfgjfbsdjbf"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_below="@id/tvMessage"
+                android:id="@+id/llOffer"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer Price: 56 GBP"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAcceptOffer"
+                    android:layout_below="@id/tvOffer"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Accept and Pay"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

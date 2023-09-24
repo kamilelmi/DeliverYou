@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeliverYou"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminChatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyActivitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyMsgsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Support_Chat"
+            android:exported="false" />
+        <activity
+            android:name=".MasterCard_screen"
+            android:exported="false" />
+        <activity
+            android:name=".VisaCard_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Paypal_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Payment_Screens"
+            android:exported="false" />
+        <activity
+            android:name=".Specific_Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_Goods_Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Carpool_Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Specific_Carpool"
+            android:exported="false" />
+        <activity
+            android:name="com.adevinta.leku.LocationPickerActivity"
+            android:exported="false"
+            android:label="@string/leku_title_activity_location_picker"
+            android:parentActivityName=".Customer_Small_Goods"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/leku_searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Customer_Small_Goods" />
+        </activity>
+        <activity
+            android:name=".Carpool_request_list"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_Options"
+            android:exported="false" />
+        <activity
+            android:name=".Confirm_delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Small_Goods"
+            android:exported="false" />
+        <activity
+            android:name=".Waiting_driver"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_date_time"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api" />
+
+        <activity
+            android:name=".Customer_carpool_map"
+            android:exported="true"
+            android:label="@string/title_activity_customer_carpool_map" />
+        <activity
+            android:name=".Customer_Delivery_Option"
+            android:exported="false" />
+        <activity
+            android:name=".Verify_lisence"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_Driver2"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_Driver1"
+            android:exported="false" />
+        <activity
+            android:name=".Phone_verification"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_customer"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sign_Up_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

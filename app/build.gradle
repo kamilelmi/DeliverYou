@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'com.google.gms.google-services'
+    id 'org.jetbrains.kotlin.android'
+
+}
+
+android {
+    namespace 'com.example.deliveryou'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.deliveryou"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    //Custom
+    implementation "com.airbnb.android:lottie:3.5.0"
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    //Circular
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Pin View
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.android.libraries.places:places:3.0.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+
+    implementation 'com.github.androidmads:QRGenerator:1.0.1'
+
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+
+//    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+
+
+    //stripe
+    implementation 'com.stripe:stripe-android:19.0.0'
+
+    //For place picker
+    implementation 'com.adevinta.android:leku:9.1.4'
+
+    implementation 'com.twilio.sdk:twilio:8.0.0'
+
+
+
+    //Retrofit
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+}

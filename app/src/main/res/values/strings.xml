@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">DeliverYou</string>
+    <string name="customer">Customer</string>
+    <string name="driver">Driver</string>
+    <string name="or">OR</string>
+    <string name="delivering_happiness">Delivering Happiness</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="enter_your_date_of_birth">Enter Date of Birth</string>
+    <string name="enter_your_number">Enter Number</string>
+    <string name="enter_your_name">Enter username/email</string>
+    <string name="code_text">We Sent a verification code on your registered mobile number</string>
+    <string name="enter_4_digits_verification_code">Enter 6 digits verification code</string>
+    <string name="enter_your_vehicle_model">Enter Vehicle Model</string>
+
+    <string name="delivery">Delivery</string>
+    <string name="my_map_api">AIzaSyDVJKmGd15heeuT9jSfKRtke4VqfRnjAxY</string>
+
+    <string name="title_activity_customer_carpool_map">Customer_carpool_map</string>
+    <string name="GEO_API_KEY">AIzaSyDfcquTfXshRLM-sKWEfAvHV4VdT-34GI0</string>
+
+
+    <string-array name="goods">
+        <item>Documents and papers</item>
+        <item>
+        Gifts and flowers</item>
+        <item>
+        Electronics and gadgets</item>
+        <item>
+        Food and beverages</item>
+        <item>
+        Clothing and accessories</item>
+        <item>
+        Home goods and decorations</item>
+        <item>
+        Sporting equipment and gear</item>
+        <item>
+        Art and collectibles</item>
+        <item>
+        Industrial parts and tools</item>
+        <item>
+        Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        tools:context=".Driver_Options">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, "
+                android:fontFamily="@font/bubbleboddyneue"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/username_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:fontFamily="@font/bubbleboddyneue"
+                android:textColor="@color/blue_default"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/profile_pic_driver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_person_24"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/choice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose what you want"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <RadioGroup
+                android:id="@+id/Usage_option_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:gravity="center">
+
+
+
+                        <RadioButton
+                            android:id="@+id/Carpool_driver"
+                            android:layout_width="200dp"
+                            android:layout_height="180dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/custom_radio"
+                            android:button="@android:color/transparent"
+                            />
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/carpool_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Carpool"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/text_theme"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/Small_Goods_driver"
+                            android:layout_width="200dp"
+                            android:layout_height="180dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/custom_radio"
+                            android:button="@android:color/transparent" />
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/small_goods_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_theme"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true" />
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RadioGroup>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteaccount_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choice_layout"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:text="Continue"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</layout>

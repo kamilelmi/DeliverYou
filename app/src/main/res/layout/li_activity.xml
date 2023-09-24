@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/ivActivity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_carpooling"
+            android:padding="10dp"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_round_cornered"
+            />
+
+
+        <TextView
+            android:id="@+id/tvPickupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Time: 06 May, 2023 6:55 AM"
+            android:layout_toEndOf="@id/ivActivity"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: Bradford, UK"
+            android:layout_toEndOf="@id/ivActivity"
+            android:layout_below="@id/tvPickupTime"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:drawablePadding="5dp"
+            android:layout_marginStart="10dp"
+            android:drawableTint="@color/blue_default"
+            />
+
+        <TextView
+            android:id="@+id/tvDropoff"
+            android:layout_below="@id/tvPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: Somewhere, UK"
+            android:layout_toEndOf="@id/ivActivity"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:drawableTint="@color/blue_default"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:drawablePadding="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Request"
+            android:layout_below="@id/tvDropoff"
+            android:layout_toEndOf="@id/ivActivity"
+            android:layout_marginStart="10dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/red_1"
+            />
+
+
+    </RelativeLayout>
+</layout>

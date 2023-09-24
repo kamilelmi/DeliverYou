@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Splash_Screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="DeliverYou"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/bubbleboddyneue"
+        android:textColor="@color/blue_default" />
+
+
+        <TextView
+            android:id="@+id/upper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bubbleboddyneue"
+            android:gravity="center"
+            android:text="@string/delivering_happiness"
+            android:textColor="@color/dim_black"
+            android:textSize="25sp" />
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:src="@drawable/delivery_anim" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
